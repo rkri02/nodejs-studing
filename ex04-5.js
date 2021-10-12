@@ -23,3 +23,4 @@ let zf = ( x > y ? x1 : y1);
 console.log(zt);
 console.log(zf);
 // 각각의 출력되는 문자는 true / false로 나타나 진다
+
