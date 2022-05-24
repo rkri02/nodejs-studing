@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Create Page </title>
+    </head>
+    <body>
+        <hr>
+        <form method="post">
+            <fieldset>
+                <% data.forEach(function(list, index){   %>
+                <table style="width:98%">
+                    <div>
+                        <tr>
+                            <td><label>title</label></td>
+                            <td><input type="text" name="title" style="width:98%" value="<%= list.title %>"></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><label>name</label></td>
+                            <td><input type="text" name="name" style="width:98%" value="<%= list.name %>"></td>
+                        </tr>
+                    </div>
+                </table>
+                <%
+                });   
+                %>
+            </fieldset>
+            <input type="submit">
+        </form>
+        <form action="\" method="get">
+            <input type="submit" value="취소">
+        </form>
+    </body>
+</html>
